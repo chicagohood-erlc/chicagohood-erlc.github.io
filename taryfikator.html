@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="RoCity RP, Najlepszy Serwer RP w Polsce!" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="author" content="Dequs"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Taryfikator</title>
+</head>
+
+<script
+  src="https://code.jquery.com/jquery-1.5.2.min.js"
+  integrity="sha256-jwoZ7oxgazWhCQSVHgon2hiW6v4zxuiMt7y+RV8Foko="
+  crossorigin="anonymous"></script>
+
+
+<script>
+  $( document ).ready(function() {
+    function calcAndShowTotal(){
+  var total = 0;
+  $('.bg-text #scroll #pricelist :checkbox[checked]').each(function(){
+      total += parseFloat($(this).attr('price')) || 0;
+  });
+  $('#total').val(total);
+}
+
+$('.bg-text #scroll #pricelist :checkbox').click(function(){
+  calcAndShowTotal();
+});
+
+calcAndShowTotal();
+});
+</script>
+
+
+
+<script>
+  $( document ).ready(function() {
+    function calcAndShowTotal(){
+  var lata = 0;
+  $('.bg-text #scroll #pricelist :checkbox[checked]').each(function(){
+      lata += parseFloat($(this).attr('lata')) || 0;
+  });
+  $('#lata').val(lata);
+}
+
+$('.bg-text #scroll #pricelist :checkbox').click(function(){
+  calcAndShowTotal();
+});
+
+calcAndShowTotal();
+});
+</script>
+
+<script>
+      $( document ).ready(function() {
+    function calcAndShowTotal(){
+  var lata = 0;
+  $('.bg-text #scroll #pricelist :checkbox[checked]').each(function(){
+      lata += parseFloat($(this).attr('lata')) * 10 || 0;
+  });
+  $('#czas').val(lata);
+}
+
+$('.bg-text #scroll #pricelist :checkbox').click(function(){
+  calcAndShowTotal();
+});
+
+calcAndShowTotal();
+});
+</script>
+
+<body>
+  <div class="bg-text">
+    <a class="btn_tablet" href="tablet.html">Tablet</a></br><br>
+  <br>
+  <div style="overflow-y: scroll; height: 500px; background-color: rgb(35 39 42);" id="scroll">
+  <div id="pricelist">
+    <h1>Wykroczenia drogowe</h1>
+    <input type="checkbox" id="item_1" value="item_1" price="500" lata="0" /><label for="item_1">Jazda pod wpływem alkoholu lub substancji odurzających</label><br/>
+    <input type="checkbox" id="item_3" value="item_3" price="1000" lata="0" /><label for="item_3">Przekroczenie prędkości w mieście</label><br/>
+    <input type="checkbox" id="item_4" value="item_4" price="1000" lata="0" /><label for="item_4">Brawurowa jazda</label><br/>
+    <input type="checkbox" id="item_5" value="item_5" price="1500" lata="0" /><label for="item_5">Stwarzanie zagrożenia w ruchu drogowym</label><br/>
+    <input type="checkbox" id="item_6" value="item_6" price="500" lata="0" /><label for="item_6">Nie zatrzymanie do kontroli</label><br/>
+    <input type="checkbox" id="item_7" value="item_7" price="300" lata="0" /><label for="item_7">Zły stan techniczny pojazdu</label><br/>
+    <input type="checkbox" id="item_8" value="item_8" price="300" lata="0" /><label for="item_8">Przejazd na czerwonym świetle</label><br/>
+    <input type="checkbox" id="item_9" value="item_9" price="1000" lata="0" /><label for="item_9">Zniszczenie mienia</label></br>
+    <input type="checkbox" id="item_10" value="item_5" price="500" lata="0" /><label for="item_10">Nie zatrzymanie się na znaku stop</label></br>
+    <input type="checkbox" id="item_10" value="item_10" price="2000" lata="0" /><label for="item_1">Spowodowanie wypadku</label><br/>
+    <input type="checkbox" id="item_11" value="item_2" price="1500" lata="0" /><label for="item_2">Potrącenie przechodznia</label><br/>
+    <input type="checkbox" id="item_12" value="item_3" price="500" lata="0" /><label for="item_3">Nie własciwe parkowanie</label><br/>
+    <input type="checkbox" id="item_13" value="item_4" price="300" lata="0" /><label for="item_4">Przejście przez ulicę w miejscu niedozwolonym</label><br/>
+    <input type="checkbox" id="item_14" value="item_5" price="1000" lata="0" /><label for="item_5">Niszczenie mienia publicznego</label><br/>
+    <h1>Przestępstwa lekkie</h1>
+    <input type="checkbox" id="item_1" value="item_1" price="500" lata="0" /><label for="item_1">Niewykonywanie poleceń FP</label><br/>
+    <input type="checkbox" id="item_2" value="item_2" price="500" lata="0" /><label for="item_2">Obraza FP</label><br/>
+    <input type="checkbox" id="item_3" value="item_3" price="500" lata="0" /><label for="item_3">Utrudnianie pracy służbom publicznym</label><br/>
+    <input type="checkbox" id="item_4" value="item_4" price="2000" lata="0" /><label for="item_4">Fałszywe zgłoszenie</label><br/>
+    <input type="checkbox" id="item_5" value="item_5" price="2000" lata="0" /><label for="item_5">Niszczenie cudzej własności</label><br/>
+    <input type="checkbox" id="item_6" value="item_6" price="5000" lata="12" /><label for="item_6">Składanie fałszywych zeznań</label><br/>
+    <input type="checkbox" id="item_7" value="item_7" price="5000" lata="8" /><label for="item_7">Kradzież pojazdu</label><br/>
+    <input type="checkbox" id="item_8" value="item_8" price="8000" lata="0" /><label for="item_8">Posiadanie kontrabandy</label><br/>
+    <input type="checkbox" id="item_9" value="item_9" price="2000" lata="0" /><label for="item_8">Stawianie oporu</label><br/>
+    <input type="checkbox" id="item_10" value="item_10" price="2500" lata="0" /><label for="item_8">Kradzież cudzej własności</label><br/>
+    <input type="checkbox" id="item_11" value="item_2" price="200" lata="0" /><label for="item_8">Chodzenie zamaskowanym po mieście</label><br/>
+    <input type="checkbox" id="item_12" value="item_3" price="5000" lata="0" /><label for="item_8">Próba przekupstwa</label><br/>
+    <input type="checkbox" id="item_9" value="item_9" price="1500" lata="0" /><label for="item_8">Prowokacja LCSP</label><br/>
+	<h1>Przestępstwa ciężkie</h1>
+	<input type="checkbox" id="item_1" value="item_1" price="5000" lata="12" /><label for="item_1">Groźby przy użyciu broni</label><br/>
+    <input type="checkbox" id="item_2" value="item_2" price="5000" lata="20" /><label for="item_2">Ucieczka przed LCSP</label><br/>
+    <input type="checkbox" id="item_3" value="item_3" price="8000" lata="12" /><label for="item_3">Porwanie</label><br/>
+    <input type="checkbox" id="item_4" value="item_4" price="4000" lata="6" /><label for="item_4">Pomoc w ucieczce</label><br/>
+    <input type="checkbox" id="item_5" value="item_5" price="6000" lata="6" /><label for="item_5">Współudział w przestępstwie</label><br/>
+    <input type="checkbox" id="item_6" value="item_6" price="7000" lata="6" /><label for="item_6">Napad na stacje benzynową</label><br/>
+    <input type="checkbox" id="item_7" value="item_7" price="10000" lata="12" /><label for="item_7">Napad na jubilera</label><br/>
+    <input type="checkbox" id="item_8" value="item_8" price="15000" lata="18" /><label for="item_8">Napad na bank</label><br/>
+    <input type="checkbox" id="item_10" value="item_10" price="4000" lata="30" /><label for="item_8">Próba napadu/napaści</label><br/>
+    <input type="checkbox" id="item_11" value="item_2" price="3500" lata="24" /><label for="item_8">Podszywanie się pod FP</label><br/>
+    <input type="checkbox" id="item_12" value="item_3" price="2500" lata="9" /><label for="item_8">Nękanie obywatela/obywatelki</label><br/>
+	  <input type="checkbox" id="item_12" value="item_3" price="25000" lata="30" /><label for="item_8">Terroryzm</label><br/>
+    <input type="checkbox" id="item_13" value="item_3" price="2000" lata="25" /><label for="item_8">Ucieczka z więzienia</label>
+    <h1>Broń i narkotyki</h1>
+    <input type="checkbox" id="item_5" value="item_5" price="1000" lata="9" /><label for="item_4">Posiadanie broni bez pozwolenia (broń krótka)</label><br/>
+	<input type="checkbox" id="item_6" value="item_6" price="5000" lata="15" /><label for="item_4">Posiadanie broni bez pozwolenia (broń długa)</label><br/>
+	<input type="checkbox" id="item_9" value="item_9" price="1000" lata="20" /><label for="item_4">Bezpodstawne użycie broni</label><br/>
+	<h1>Przestępstwa związane z użyciem siły/uszczerbkim na zdrowiu</h1>
+    <input type="checkbox" id="item_1" value="item_1" price="15000" lata="19" /><label for="item_1">Usiłowanie zabójstwa obywatela</label><br/>
+    <input type="checkbox" id="item_2" value="item_2" price="20000" lata="25" /><label for="item_2">Usiłowanie zabójstwa FP</label><br/>
+    <input type="checkbox" id="item_3" value="item_3" price="10000" lata="10" /><label for="item_3">Napaść na FP</label><br/>
+    <input type="checkbox" id="item_4" value="item_4" price="2000" lata="1" /><label for="item_4">Groźby karalne</label><br/>
+    <input type="checkbox" id="item_5" value="item_5" price="6000" lata="10" /><label for="item_5">Nie umyślne spowodowanie uszczerbku na zdrowiu</label><br/>
+    <input type="checkbox" id="item_6" value="item_6" price="5000" lata="5" /><label for="item_6">Naruszenie nietykalności cielestnej</label><br/>
+    <input type="checkbox" id="item_8" value="item_8" price="500" lata="0" /><label for="item_8">Udział w bójce</label><br/>	
+    <input type="checkbox" id="item_8" value="item_8" price="50000" lata="50" /><label for="item_8">Morderstwo</label><br/>
+</div>
+<h3>Mandat</h3>
+<input type="text" id="total" value="0" readonly="readonly" style="color: white;"/>
+<h3>Wyrok</h3>
+<input type="text" id="lata" value="0" readonly="readonly" style="color: white;"/>
+<br>
+<br>
+<br>
+</div>
+</div>
+</html>
